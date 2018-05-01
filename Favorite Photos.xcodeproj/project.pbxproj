@@ -14,6 +14,7 @@
 		A077D53020976E7400B6C83A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A077D52F20976E7400B6C83A /* GoogleService-Info.plist */; };
 		A077D5322097718600B6C83A /* FavoritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077D5312097718600B6C83A /* FavoritePhotoViewController.swift */; };
 		A077D534209771A200B6C83A /* PhototListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077D533209771A200B6C83A /* PhototListViewController.swift */; };
+		A077D5362098BC0200B6C83A /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077D5352098BC0200B6C83A /* ImageUtils.swift */; };
 		E8294EB6E5553A2515D39EE9 /* Pods_Favorite_Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1CBAA269E84D46FFBB4FAE /* Pods_Favorite_Photos.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		A077D52F20976E7400B6C83A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A077D5312097718600B6C83A /* FavoritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoViewController.swift; sourceTree = "<group>"; };
 		A077D533209771A200B6C83A /* PhototListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhototListViewController.swift; sourceTree = "<group>"; };
+		A077D5352098BC0200B6C83A /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		AF80B53CFB9BA5A17CB7D4A5 /* Pods-Favorite Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite Photos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Favorite Photos/Pods-Favorite Photos.release.xcconfig"; sourceTree = "<group>"; };
 		FE1CBAA269E84D46FFBB4FAE /* Pods_Favorite_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				A077D52920976D2200B6C83A /* Info.plist */,
 				A077D5312097718600B6C83A /* FavoritePhotoViewController.swift */,
 				A077D533209771A200B6C83A /* PhototListViewController.swift */,
+				A077D5352098BC0200B6C83A /* ImageUtils.swift */,
 			);
 			path = "Favorite Photos";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -205,6 +209,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -228,6 +233,7 @@
 				A077D51E20976D1F00B6C83A /* AppDelegate.swift in Sources */,
 				A077D5322097718600B6C83A /* FavoritePhotoViewController.swift in Sources */,
 				A077D534209771A200B6C83A /* PhototListViewController.swift in Sources */,
+				A077D5362098BC0200B6C83A /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,10 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,10 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
